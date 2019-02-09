@@ -1,2 +1,47 @@
-# P.One-PHP-Framework
-A simple and personal PHP framework. 
+# Simple MVC Framework
+This is a simple implementation of the MVC pattern for building web applications in PHP.
+It's not all done yet, but it's available to helping understanding the pattern. 
+
+Under construction!
+
+## - Requirements
+You'll need a webserver with PHP 7.2.0 or higher and the possibility to rewrite a URL (IIS, Apache, Nginx, etc). You also can use [composer](https://getcomposer.org/) for PSR-4 pre-loading and package management.
+
+## - Instructions
+There is two ways:
+
+1. Cloning this repo;
+2. Download as .zip file to your project root directory.
+
+After, run composer update to generate the needed PSR-4 preloading files.
+
+This framework use htaccess for [Apache](https://httpd.apache.org/) by default. If you need to other server, please use the correct file based on your setup.
+
+## Directory Structure
+
+>`App`
+>
+>>`Controllers` *Application Controllers*
+>>
+>>`Models` *Application Models*
+>>
+>>`Views` *Application Views*
+>
+-
+>`Core`
+>
+>>`Config` *Configurations file*
+>>
+>>`libs` *Libraries*
+>>
+>>`Views` *Application Views*
+>
+-
+>`public`
+>
+>>`assets` *Style files*
+-
+>`public`
+
+## Let's start it!
+Happy coding!

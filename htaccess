@@ -1,0 +1,30 @@
+<files ~ "^.*\.([Hh][Tt][Aa])">
+  Order Allow,Deny
+  Deny from all
+  Satisfy all
+</files>
+
+<FilesMatch ".(htpasswd|ini|phps|fla|psd|log|sh)$">
+  Order Allow,Deny
+  Deny from all
+</FilesMatch>
+
+#Definicoes gerais
+AddDefaultCharset UTF-8
+Options +Indexes
+Options +FollowSymLinks
+Options -ExecCGI
+AddHandler cgi-script .pl .py .jsp .asp .htm .shtml .sh .cgi
+
+RewriteEngine on 
+RewriteBase /
+
+#Roteamento para a index
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*?)$ index.php
+
+# Retirar extensao do endereco
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME}\.php -f
+#RewriteRule ^(.*)$ $1.php
