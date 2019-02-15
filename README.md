@@ -1,6 +1,6 @@
 # P.One PHP Framework
-This is my simple implementation of the MVC pattern for building web applications in PHP.
-It's not all done yet, but it's available to helping others to understanding the pattern. 
+This is my simple implementation of MVC pattern for building PHP applications.
+It's under construction, but it's available to helping others to understanding the pattern. 
 
 **Under construction!**
 
@@ -36,7 +36,7 @@ This framework use htaccess ([Apache](https://httpd.apache.org/)) by default. If
 -
 >`Core`
 >
->>`Config` *Configurations file*
+>>`config` *Configurations file*
 >>
 >>`libs` *Libraries*
 >>
