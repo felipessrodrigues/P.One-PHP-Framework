@@ -45,6 +45,7 @@ This framework use htaccess ([Apache](https://httpd.apache.org/)) by default. If
 >`public`
 >
 >>`css` *Style files*
+>>
 >>`js` *Javascript files*
 
 ### Let's start it!
